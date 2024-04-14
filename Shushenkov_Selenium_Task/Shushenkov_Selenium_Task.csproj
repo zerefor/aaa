@@ -8,8 +8,8 @@
         <ProjectGuid>{7047A316-BD33-4AB0-BD71-7EFF9907E831}</ProjectGuid>
         <OutputType>Exe</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
-        <RootNamespace>Shushenkov_Selenium</RootNamespace>
-        <AssemblyName>Shushenkov_Selenium</AssemblyName>
+        <RootNamespace>Shushenkov_Selenium_Task</RootNamespace>
+        <AssemblyName>Shushenkov_Selenium_Task</AssemblyName>
         <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
         <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

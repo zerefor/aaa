@@ -3,7 +3,7 @@ using System.Threading;
 using NUnit.Framework;
 using OpenQA.Selenium.Chrome;
 
-namespace Shushenkov_Selenium
+namespace Shushenkov_Selenium_Task
 
 {
     internal class Program

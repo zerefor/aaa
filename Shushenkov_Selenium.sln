@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shushenkov_Selenium", "Shushenkov_Selenium\Shushenkov_Selenium.csproj", "{7047A316-BD33-4AB0-BD71-7EFF9907E831}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shushenkov_Selenium_Task", "Shushenkov_Selenium_Task\Shushenkov_Selenium_Task.csproj", "{7047A316-BD33-4AB0-BD71-7EFF9907E831}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
