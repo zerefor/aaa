@@ -1,7 +1,8 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using NUnit.Framework;
 
-namespace shushenkovSeleniumCorrect;
+namespace TestProject1;
     
 public class SeleniumTests
 {
@@ -34,4 +35,4 @@ public class SeleniumTests
         
         driver.Quit();
     }
-}
+} 
