@@ -17,7 +17,7 @@ namespace Shushenkov_Selenium
             var driver = new ChromeDriver();
             driver.Navigate().GoToUrl("https://staff-testing.testkontur.ru");
 
-            Thread.Sleep(3000);
+            //Thread.Sleep(4000);
             
             var login = driver.findElement(By.Id("Username"));
             login.SendKeys("User");
