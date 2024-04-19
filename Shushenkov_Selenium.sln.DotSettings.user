@@ -1,11 +1,10 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=331bd2d6_002D950d_002D48fb_002D88ed_002D9ee4879ca3a0/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="SeleniumTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=331bd2d6_002D950d_002D48fb_002D88ed_002D9ee4879ca3a0/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="SeleniumTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::8E6D796D-4736-4F88-A273-B3A2E9F8561F::net8.0::TestProject1.SeleniumTests&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::F409721B-82F1-4F8E-B2EF-E90085B06654::net8.0::shushenkovSeleniumCorrect.SeleniumTests.SeleniumTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::F409721B-82F1-4F8E-B2EF-E90085B06654::net8.0::shushenkovKonturAutotests.Tests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=3fd8603d_002D2578_002D4218_002Da0e1_002Ddd1f5d9d2026/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="SeleniumTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=3fd8603d_002D2578_002D4218_002Da0e1_002Ddd1f5d9d2026/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="SeleniumTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::8E6D796D-4736-4F88-A273-B3A2E9F8561F::net8.0::TestProject1.SeleniumTests.SeleniumTest&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
