@@ -90,7 +90,7 @@ public class Tests
     }
     
     [Test]
-    public void CompanyAdess()
+    public void CompanyAdress()
     {   
         var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(3000));
         driver.FindElement(By.CssSelector("[data-tid='Title']"));
