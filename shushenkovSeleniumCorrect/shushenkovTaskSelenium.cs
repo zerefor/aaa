@@ -25,8 +25,6 @@ public class Tests
     [Test]
     public void CorrectAuthorisation()
     {
-        driver.FindElement(By.CssSelector("[data-tid='Title']"));
-        
         var currentUrl = driver.Url;
         Assert.That(currentUrl == "https://staff-testing.testkontur.ru/news","Ожидаемая ссылка https://staff-testing.testkontur.ru/news, но получаем currentUrl");
     }
@@ -44,14 +42,14 @@ public class Tests
     
     [Test]
     //Данная проверка повторяет местами повторяет проверку авторизации, но здесь найден баг сайта.
-    public void TechsupportLink()
+    public void TechSupportLink()
     { 
-        var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(3000));
+        var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
         
         var techSupportUrl = driver.FindElement(By.LinkText("Техподдержка"));
         techSupportUrl.Click();
-
-        wait.Until(ExpectedConditions.UrlContains("https://www.google.com"));
+        
+        wait.Until(ExpectedConditions.ElementExists(By.CssSelector("[value='Поиск в Google']")));
         
         var currentUrl = driver.Url;
         
@@ -62,9 +60,8 @@ public class Tests
     [Test]
     public void CommunityDelete()
     {   
-        var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(3000));
-        driver.FindElement(By.CssSelector("[data-tid='Title']"));
-        
+        var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+        string communityName = "ForAutoTests";
         driver.Navigate().GoToUrl("https://staff-testing.testkontur.ru/communities");
         wait.Until(ExpectedConditions.UrlContains("https://staff-testing.testkontur.ru/communities"));
        
@@ -72,34 +69,42 @@ public class Tests
         createCommunityButton.Click();
         
         var communityNameArea = driver.FindElement(By.ClassName("react-ui-seuwan"));
-        communityNameArea.SendKeys("ForAutoTests");
+        communityNameArea.SendKeys(communityName);
         
         var createAssertButton = driver.FindElement(By.ClassName("react-ui-m0adju"));
         createAssertButton.Click();
+
+        var community = driver.FindElement(By.LinkText(communityName));
+        var communitySettingsUrl = driver.Url;
+        community.Click();
+
+        //ожидаем загрузки страницы
+        driver.FindElement(By.CssSelector("[data-tid='Tabs']"));
+        
+        var communityUrl = driver.Url;
+        
+        driver.Navigate().GoToUrl(communitySettingsUrl);
         
         var deleteCommunity = driver.FindElement(By.CssSelector("[data-tid='DeleteButton']"));
         deleteCommunity.Click();
         
         var deleteButton = driver.FindElement(By.ClassName("react-ui-aivml8"));
         deleteButton.Click();
-
-        wait.Until(ExpectedConditions.UrlContains("https://staff-testing.testkontur.ru/news"));
-        var currentUrl = driver.Url;
         
-        Assert.That(currentUrl == "https://staff-testing.testkontur.ru/news","Удаление сообщества не было завершено.");
+        driver.Navigate().GoToUrl(communityUrl);
+
+        var isValidationMessage = driver.FindElement(By.CssSelector("[data-tid='ValidationMessage']")).Displayed;
+        
+        Assert.True(isValidationMessage, "Нет уведомления об удаленном сообществе");
     }
     
     [Test]
-    public void CompanyAdress()
+    public void CompanyAddress()
     {   
-        var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(3000));
-        driver.FindElement(By.CssSelector("[data-tid='Title']"));
+        var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
         
-        driver.Navigate().GoToUrl("https://staff-testing.testkontur.ru/company");
-        wait.Until(ExpectedConditions.UrlContains("https://staff-testing.testkontur.ru/company"));
-        
-        var selectCompany = driver.FindElement(By.CssSelector("[href='/company/5117fcbf-1c7b-438f-bd60-03afdee76e24']"));
-        selectCompany.Click();
+        driver.Navigate().GoToUrl("https://staff-testing.testkontur.ru/company/5117fcbf-1c7b-438f-bd60-03afdee76e24");
+        wait.Until(ExpectedConditions.UrlContains("https://staff-testing.testkontur.ru/company/5117fcbf-1c7b-438f-bd60-03afdee76e24"));
         
         var adressString = driver.FindElement(By.CssSelector("[data-tid='Address']")).Text;
         
@@ -118,6 +123,9 @@ public class Tests
         
         var enter = driver.FindElement(By.Name("button"));
         enter.Click(); 
+        
+        //ожидаем загрузку элемента
+        driver.FindElement(By.CssSelector("[data-tid='Title']"));
     }
 
     [TearDown]

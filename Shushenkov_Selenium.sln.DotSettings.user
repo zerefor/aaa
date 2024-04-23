@@ -4,8 +4,38 @@
     &lt;TestId&gt;NUnit3x::F409721B-82F1-4F8E-B2EF-E90085B06654::net8.0::shushenkovKonturAutotests.Tests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=3fd8603d_002D2578_002D4218_002Da0e1_002Ddd1f5d9d2026/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="SeleniumTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=3fd8603d_002D2578_002D4218_002Da0e1_002Ddd1f5d9d2026/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="SeleniumTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::8E6D796D-4736-4F88-A273-B3A2E9F8561F::net8.0::TestProject1.SeleniumTests.SeleniumTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::F409721B-82F1-4F8E-B2EF-E90085B06654::net8.0::shushenkovKonturAutotests.Tests.CorrectAuthorisation&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=41034342_002Debbe_002D495e_002D8aa1_002Dc5a370e9a19d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TechSupportLink" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::F409721B-82F1-4F8E-B2EF-E90085B06654::net8.0::shushenkovKonturAutotests.Tests.TechSupportLink&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=bb9dc39f_002D7c6f_002D40b4_002D8c09_002D5ee21befabc3/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CorrectAuthorisation" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::F409721B-82F1-4F8E-B2EF-E90085B06654::net8.0::shushenkovKonturAutotests.Tests.CorrectAuthorisation&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=bbc907e6_002De5a1_002D4265_002D958b_002D5ebf6be20c42/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CorrectAuthorisation #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::F409721B-82F1-4F8E-B2EF-E90085B06654::net8.0::shushenkovKonturAutotests.Tests.CorrectAuthorisation&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=cc01e2c0_002Defff_002D4fa2_002D934e_002D2a2f86954b8e/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TechSupportLink #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::F409721B-82F1-4F8E-B2EF-E90085B06654::net8.0::shushenkovKonturAutotests.Tests.TechSupportLink&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d60656c0_002D6df9_002D47e2_002D8f19_002Da5669969fbc4/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CorrectAuthorisation #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::F409721B-82F1-4F8E-B2EF-E90085B06654::net8.0::shushenkovSeleniumCorrect.Tests.CorrectAuthorisation&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e77236d9_002D5acc_002D441f_002D9ac9_002D9f48f59af0cf/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TechSupportLink #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::F409721B-82F1-4F8E-B2EF-E90085B06654::net8.0::shushenkovKonturAutotests.Tests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
