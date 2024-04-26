@@ -44,12 +44,10 @@ public class Tests
     //Данная проверка повторяет местами повторяет проверку авторизации, но здесь найден баг сайта.
     public void TechSupportLink()
     { 
-        var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
-        
         var techSupportUrl = driver.FindElement(By.LinkText("Техподдержка"));
         techSupportUrl.Click();
         
-        wait.Until(ExpectedConditions.ElementExists(By.CssSelector("[value='Поиск в Google']")));
+        new WebDriverWait(driver, TimeSpan.FromSeconds(10)).Until(ExpectedConditions.ElementExists(By.CssSelector("[value='Поиск в Google']")));
         
         var currentUrl = driver.Url;
         
@@ -60,10 +58,9 @@ public class Tests
     [Test]
     public void CommunityDelete()
     {   
-        var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
         string communityName = "ForAutoTests";
         driver.Navigate().GoToUrl("https://staff-testing.testkontur.ru/communities");
-        wait.Until(ExpectedConditions.UrlContains("https://staff-testing.testkontur.ru/communities"));
+        new WebDriverWait(driver, TimeSpan.FromSeconds(10)).Until(ExpectedConditions.UrlContains("https://staff-testing.testkontur.ru/communities"));
        
         var createCommunityButton = driver.FindElement(By.ClassName("sc-juXuNZ"));
         createCommunityButton.Click();
@@ -101,10 +98,8 @@ public class Tests
     [Test]
     public void CompanyAddress()
     {   
-        var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
-        
         driver.Navigate().GoToUrl("https://staff-testing.testkontur.ru/company/5117fcbf-1c7b-438f-bd60-03afdee76e24");
-        wait.Until(ExpectedConditions.UrlContains("https://staff-testing.testkontur.ru/company/5117fcbf-1c7b-438f-bd60-03afdee76e24"));
+        new WebDriverWait(driver, TimeSpan.FromSeconds(10)).Until(ExpectedConditions.UrlContains("https://staff-testing.testkontur.ru/company/5117fcbf-1c7b-438f-bd60-03afdee76e24"));
         
         var adressString = driver.FindElement(By.CssSelector("[data-tid='Address']")).Text;
         
