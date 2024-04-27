@@ -103,7 +103,7 @@ public class Tests
         
         var adressString = driver.FindElement(By.CssSelector("[data-tid='Address']")).Text;
         
-        Assert.That(adressString == ". Екатеринбург, . Ленина");
+        Assert.That(adressString == ". Екатеринбург, . Ленина", "adress string - не соответствует . Екатеринбург, . Ленина");
     }
 
     public void Authorization()
